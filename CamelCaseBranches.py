@@ -4,7 +4,7 @@ def camelcase(sentence):
     title_case = sentence.title() # Uppercase first letter of each word
     upper_camel_cased = title_case.replace(' ', '')# remove spaces 
     # Lowercase first letter, join with rest of string
-    # Slices don't produce index out of bounds errors
+    # Slices don't produce index out of bounds errors test
     # So this still works on empty strings, strings of length 1
     return upper_camel_cased[0:1].lower() + upper_camel_cased[1:] 
  
